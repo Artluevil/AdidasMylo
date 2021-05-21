@@ -1,0 +1,668 @@
+@media only screen and (max-width: 1000px) {
+  .product-content-show1 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 !important;
+  }
+  .product-content-show1-dsc {
+    width: 90% !important;
+    margin-left: 5%;
+  }
+  .product-content-show1-pic {
+    width: 50% !important;
+    margin-left: 25%;
+    margin-top: 100px !important;
+  }
+  .product-content-show2 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 !important;
+  }
+  .product-content-show2-dsc {
+    width: 90% !important;
+    margin-left: 5%;
+  }
+  .product-content-show2-pic {
+    width: 50% !important;
+    height: 50% !important;
+    margin-left: 25%;
+    margin-top: 100px !important;
+  }
+  .product-content-show3 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 !important;
+  }
+  .product-content-show3-dsc {
+    width: 90% !important;
+    margin-left: 5%;
+  }
+  .product-content-show3-pic {
+    width: 90% !important;
+    margin-left: 10%;
+    margin-top: 100px !important;
+  }
+  .navbar-link .logo-adidas {
+    width: 60px !important;
+    height: 40px !important;
+  }
+  .navbar-link .product-name {
+    margin-top: 8px !important;
+    font-size: 16px !important;
+  }
+  .menu-nav {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 10px !important;
+    top: 1px !important;
+    list-style: none;
+  }
+  .menu-nav-item {
+    margin-right: 10px !important;
+  }
+  .menu-nav-item-link {
+    color: white;
+    text-decoration: none;
+    font-weight: weight(medium);
+    font-size: 12px !important;
+  }
+  .video-wrapper .buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    left: 5% !important;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1em;
+}
+
+header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: black;
+  opacity: 0.95;
+  z-index: 3;
+}
+
+.navbar-link {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.navbar-link .logo-adidas {
+  width: 100px;
+  height: 60px;
+  margin-right: 25px;
+  margin-left: 15px;
+}
+
+.navbar-link .product-name {
+  color: white;
+  width: 50%;
+  margin-top: 20px;
+  font-weight: 750;
+  font-size: 24px;
+}
+
+.menu-nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 60px;
+  top: 15px;
+  list-style: none;
+}
+
+.menu-nav-item {
+  margin-right: 20px;
+}
+
+.menu-nav-item-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.video-wrapper::before {
+  content: '';
+  position: absolute;
+  background: #474747;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(0deg, black 0%, rgba(255, 255, 255, 0.2) 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.video-wrapper .buttons {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  left: 41%;
+  right: 50%;
+}
+
+.video-wrapper .btn-about {
+  background: none;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  padding: 10px 40px;
+  cursor: pointer;
+  margin-right: 15px;
+  opacity: .8;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.video-wrapper .btn-about:hover {
+  -webkit-box-shadow: 0px 0px 24px 3px #e8c064;
+  box-shadow: 0px 0px 24px 3px #e8c064;
+  opacity: 1;
+}
+
+.video-wrapper .btn-visit {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 10px 40px;
+  opacity: .8;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.video-wrapper .btn-visit:hover {
+  -webkit-box-shadow: 0px 0px 24px 3px #e8c064;
+  box-shadow: 0px 0px 24px 3px #e8c064;
+  opacity: 1;
+}
+
+.video {
+  z-index: 1 !important;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-content {
+  top: 90%;
+  height: 50%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.product-content-show1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+  margin-bottom: 100px;
+  margin-top: 200px;
+}
+
+.product-content-show1-pic {
+  width: 400px;
+}
+
+.product-content-show1-dsc {
+  width: 25%;
+  margin-top: 70px;
+}
+
+.product-content-show1 h2 {
+  color: #ca8216;
+}
+
+.product-content-show2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 35%;
+  margin-bottom: 100px;
+}
+
+.product-content-show2 h2 {
+  color: #0bcf1c;
+}
+
+.product-content-show2-pic {
+  width: 400px;
+}
+
+.product-content-show2-dsc {
+  width: 40%;
+  margin-top: 120px;
+}
+
+.product-content-show3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+  margin-bottom: 100px;
+}
+
+.product-content-show3-pic {
+  width: 400px;
+}
+
+.product-content-show3-dsc {
+  width: 25%;
+  margin-top: 70px;
+}
+
+.product-content-show3 h2 {
+  color: #ca8216;
+}
+
+@-webkit-keyframes carouselAnimItem1 {
+  0% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  5% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  25% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  30% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes carouselAnimItem1 {
+  0% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  5% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  25% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  30% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes carouselAnimItem2 {
+  0% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  25% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  30% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  50% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  55% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes carouselAnimItem2 {
+  0% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  25% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  30% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  50% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  55% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes carouselAnimItem3 {
+  0% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  50% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  55% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  75% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  80% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes carouselAnimItem3 {
+  0% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  50% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  55% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  75% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  80% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes carouselAnimItem4 {
+  0% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  75% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  80% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  95% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes carouselAnimItem4 {
+  0% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  75% {
+    margin-left: -50%;
+    opacity: 0;
+  }
+  80% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  95% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 50%;
+    opacity: 0;
+  }
+}
+
+.carousel {
+  z-index: 4;
+  margin-top: 15%;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel-item1 {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: carouselAnimItem1;
+          animation-name: carouselAnimItem1;
+}
+
+.carousel-item1 p {
+  font-size: 30px;
+  width: auto;
+}
+
+.carousel-item1 .carousel-quote {
+  position: relative;
+  font-size: 40px;
+  color: #db8f00;
+}
+
+.carousel-item1 .person-name {
+  font-size: 24px;
+  color: #303030;
+  width: auto;
+  text-align: right;
+}
+
+.carousel-item2 {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: carouselAnimItem2;
+          animation-name: carouselAnimItem2;
+}
+
+.carousel-item2 p {
+  font-size: 30px;
+  width: auto;
+}
+
+.carousel-item2 .carousel-quote {
+  position: relative;
+  font-size: 40px;
+  color: #db8f00;
+}
+
+.carousel-item2 .person-name {
+  font-size: 24px;
+  color: #303030;
+  width: auto;
+  text-align: right;
+}
+
+.carousel-item3 {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: carouselAnimItem3;
+          animation-name: carouselAnimItem3;
+}
+
+.carousel-item3 p {
+  font-size: 30px;
+  width: auto;
+}
+
+.carousel-item3 .carousel-quote {
+  position: relative;
+  font-size: 40px;
+  color: #db8f00;
+}
+
+.carousel-item3 .person-name {
+  font-size: 24px;
+  color: #303030;
+  width: auto;
+  text-align: right;
+}
+
+.carousel-item4 {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: carouselAnimItem4;
+          animation-name: carouselAnimItem4;
+}
+
+.carousel-item4 p {
+  font-size: 30px;
+  width: auto;
+}
+
+.carousel-item4 .carousel-quote {
+  position: relative;
+  font-size: 40px;
+  color: #db8f00;
+}
+
+.carousel-item4 .person-name {
+  font-size: 24px;
+  color: #303030;
+  width: auto;
+  text-align: right;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+}
+
+.footer-wrapper-text {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
