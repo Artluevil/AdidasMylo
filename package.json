@@ -1,0 +1,23 @@
+{
+  "name": "AdidasMylo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "deplot": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artluevil/AdidasMylo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artluevil/AdidasMylo/issues"
+  },
+  "homepage": "https://Artluevil.github.io/AdidasMylo",
+  "dependencies": {
+    "gh-pages": "^3.2.0"
+  }
+}

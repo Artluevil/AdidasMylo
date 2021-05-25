@@ -1,0 +1,483 @@
+@import './variables';
+
+@mixin styleProduct {
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 100px;
+
+    &-pic {
+        width: 400px;
+    }
+
+    &-dsc {
+        width: 25%;
+        margin-top: 70px;
+    }
+}
+
+@mixin styleProductMobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@mixin fadeOut {
+    margin-left: -50%;
+    opacity: 0; 
+}
+
+@mixin showText {
+    margin-left: 0;
+    opacity: 1;
+}
+
+@mixin fadeIn {
+    margin-left: 50%;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .product-content-show1 {
+        width: 100%;
+        flex-direction: column;
+        margin: 0!important;
+
+        &-dsc {
+            width: 90%!important;
+            margin-left: 5%;
+        }
+
+        &-pic {
+            width: 50%!important;
+            margin-left: 25%;
+            margin-top: 100px!important;
+        }
+    }
+    .product-content-show2 {
+        width: 100%;
+        flex-direction: column;
+        margin: 0!important;
+
+        &-dsc {
+            width: 90%!important;
+            margin-left: 5%;
+        }
+
+        &-pic {
+            width: 50%!important;
+            height: 50%!important;
+            margin-left: 25%;
+            margin-top: 100px!important;
+        }
+    }
+
+    .product-content-show3 {
+        width: 100%;
+        flex-direction: column;
+        margin: 0!important;
+
+        &-dsc {
+            width: 90%!important;
+            margin-left: 5%;
+        }
+
+        &-pic {
+            width: 90%!important;
+            margin-left: 10%;
+            margin-top: 100px!important;
+        }
+    }
+    .navbar-link {
+    
+        & .logo-adidas {
+            width: 60px!important;
+            height: 40px!important;
+        }
+        
+        & .product-name {
+            margin-top: 8px!important;
+            font-size: 16px!important;
+        }
+    }
+    .menu-nav {
+        position: absolute;
+        display: flex;
+        right: 10px!important;
+        top: 1px!important;
+        list-style: none;
+    
+        &-item {
+            margin-right: 10px!important;
+    
+            &-link {
+                color: $primary-color;
+                text-decoration: none;
+                font-weight: weight(medium);
+                font-size: 12px!important;
+            }
+        }
+    }
+    .video-wrapper {
+
+        & .buttons {
+            position: absolute;
+            width: 100%;
+            bottom: 10%;
+            left: 5%!important;
+        }
+    }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: $site-font;
+}
+
+button {
+    font-family : inherit;
+    font-size: 1em;
+}
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name)
+};
+
+@function size($font-size) {
+    @return map-get($font-sizes, $font-size)
+};
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background: $background-color;
+    opacity: 0.95;
+    z-index: 3;
+}
+
+.navbar-link {
+    width: 400px;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    & .logo-adidas {
+        width: 100px;
+        height: 60px;
+        margin-right: 25px;
+        margin-left: 15px;
+    }
+    
+    & .product-name {
+        color: $primary-color;
+        width: 50%;
+        margin-top: 20px;
+        font-weight: weight(bold);
+        font-size: size(medium);
+    }
+}
+
+.menu-nav {
+    position: absolute;
+    display: flex;
+    right: 60px;
+    top: 15px;
+    list-style: none;
+
+    &-item {
+        margin-right: 20px;
+
+        &-link {
+            color: $primary-color;
+            text-decoration: none;
+            font-weight: weight(medium);
+            font-size: size(normal);
+        }
+    }
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: rgb(71,71,71);
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255,255,255,0.2) 100%);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    & .buttons {
+        position: absolute;
+        width: 100%;
+        bottom: 10%;
+        left: 41%;
+        right: 50%;
+    }
+
+    & .btn-about {
+        background: none;
+        border: none;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        padding: 10px 40px;
+        cursor: pointer;
+        margin-right: 15px;
+        opacity: .8;
+        transition: .5s;
+        
+        &:hover {
+            -webkit-box-shadow: 0px 0px 24px 3px rgba(232,192,100,1);
+            -moz-box-shadow: 0px 0px 24px 3px rgba(232,192,100,1);
+            box-shadow: 0px 0px 24px 3px rgba(232,192,100,1);
+            opacity: 1;
+        }
+    }
+
+    & .btn-visit {
+        background: none;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        padding: 10px 40px;
+        opacity: .8;
+        cursor: pointer;
+        transition: .5s;
+        
+        &:hover {
+            -webkit-box-shadow: 0px 0px 24px 3px rgba(232,192,100,1);
+            -moz-box-shadow: 0px 0px 24px 3px rgba(232,192,100,1);
+            box-shadow: 0px 0px 24px 3px rgba(232,192,100,1);
+            opacity: 1;
+        }
+    }
+}
+
+.video {
+    z-index: 1!important;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.product-content {
+    top: 90%;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+    &-show1 {
+        @include styleProduct;
+        margin-top: 200px;
+
+        & h2 {
+            color: rgb(202, 130, 22);
+        }
+    }
+
+    &-show2 {
+        display: flex;
+        margin-left: 35%;
+        margin-bottom: 100px;
+
+        & h2 {
+            color: rgb(11, 207, 28);
+        }
+
+        &-pic {
+            width: 400px;
+        }
+    
+        &-dsc {
+            width: 40%;
+            margin-top: 120px;
+        }
+    }
+
+    &-show3 {
+        @include styleProduct;
+
+        & h2 {
+            color: rgb(202, 130, 22);
+        }
+    }
+}
+
+@keyframes carouselAnimItem1 {
+    0% {
+        @include fadeOut 
+    }
+    5% {
+        @include showText
+    }
+    25% {
+        @include showText      
+    }
+    30% {
+        margin-left: 50%;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+
+    }
+}
+
+@keyframes carouselAnimItem2 {
+    0% {
+        @include fadeOut 
+    }
+    25% {
+        @include fadeOut
+    }
+    30% {
+        @include showText
+    }
+    50% {
+        @include showText
+    }
+    55% {
+        @include fadeIn
+    }
+    100% {
+        @include fadeIn
+    }
+}
+
+@keyframes carouselAnimItem3 {
+    0% {
+        @include fadeOut
+    }
+    50% {
+        @include fadeOut
+    }
+    55% {
+        @include showText
+    }
+    75% {
+        @include showText
+    }
+    80% {
+        @include fadeIn
+    }
+    100% {
+        @include fadeIn
+    }
+}
+
+@keyframes carouselAnimItem4 {
+    0% {
+        @include fadeOut
+    }
+    75% {
+        @include fadeOut
+    }
+    80% {
+        @include showText
+    }
+    95% {
+        @include showText
+    }
+    100% {
+        @include fadeIn
+    }
+}
+
+@mixin itemOptions {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    justify-content: center;
+    text-align: center;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+@mixin textOptions {
+    
+    & p {
+        font-size: 30px;
+        width: auto;
+    }
+
+    & .carousel-quote {
+        position: relative;
+        font-size: 40px;
+        color: rgb(219, 143, 0);
+    }
+    
+    & .person-name {
+        font-size: 24px;
+        color: rgb(48, 48, 48);
+        width: auto;
+        text-align: right;
+    }
+}
+
+.carousel {
+    z-index: 4;
+    margin-top: 15%;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+    &-item1 {
+        @include itemOptions;
+        animation-name: carouselAnimItem1;
+
+        @include textOptions
+    }
+    &-item2 {
+        @include itemOptions;
+        animation-name: carouselAnimItem2;
+
+        @include textOptions
+    }
+    &-item3 {
+        @include itemOptions;
+        animation-name: carouselAnimItem3;
+
+        @include textOptions
+    }
+    &-item4 {
+        @include itemOptions;
+        animation-name: carouselAnimItem4;
+
+        @include textOptions
+    }
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+
+    &-wrapper {
+
+        &-text {
+            color: white
+        }
+    }
+    
+}
